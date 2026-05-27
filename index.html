@@ -759,15 +759,18 @@
       color: var(--text);
       font-weight: 600;
     }
+
     /* SKILLS */
     #skills {
       padding: 6rem 0;
-      background: #ffffff; /* White background as used in the portfolio */
+      background: var(--surface);
+      /* White background as used in the portfolio */
       transition: background-color 0.3s ease;
     }
 
     #skills .section-label {
-      color: var(--accent2); /* Purple accent */
+      color: var(--accent2);
+      /* Purple accent */
     }
 
     .skills-new-grid {
@@ -809,7 +812,8 @@
     }
 
     .skill-card {
-      background: var(--bg); /* Light background for the cards */
+      background: var(--bg);
+      /* Light background for the cards */
       border: 1px solid var(--border);
       border-radius: 20px;
       width: 100%;
@@ -820,9 +824,9 @@
       justify-content: center;
       gap: 0.8rem;
       box-shadow: 0 4px 15px rgba(15, 23, 36, 0.04);
-      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
-                  box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
-                  border-color 0.3s ease;
+      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        border-color 0.3s ease;
       position: relative;
       overflow: hidden;
     }
@@ -835,12 +839,10 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0) 30%,
-        rgba(255, 255, 255, 0.4) 50%,
-        rgba(255, 255, 255, 0) 70%
-      );
+      background: linear-gradient(135deg,
+          rgba(255, 255, 255, 0) 30%,
+          rgba(255, 255, 255, 0.4) 50%,
+          rgba(255, 255, 255, 0) 70%);
       transform: rotate(45deg);
       transition: transform 0.6s ease;
       pointer-events: none;
@@ -853,9 +855,10 @@
     .skill-card:hover {
       transform: translateY(-6px);
       border-color: var(--accent2);
-      box-shadow: 0 10px 25px rgba(108, 63, 245, 0.08), 
-                  0 0 15px rgba(108, 63, 245, 0.05);
-      background: #ffffff; /* Turns pure white on hover */
+      box-shadow: 0 10px 25px rgba(108, 63, 245, 0.08),
+        0 0 15px rgba(108, 63, 245, 0.05);
+      background: #ffffff;
+      /* Turns pure white on hover */
     }
 
     .skill-card-icon-container {
@@ -897,7 +900,8 @@
     .skill-card-label {
       font-size: 0.85rem;
       font-weight: 600;
-      color: var(--accent2); /* Purple text color */
+      color: var(--accent2);
+      /* Purple text color */
       text-align: center;
       line-height: 1.35;
       transition: color 0.3s ease, transform 0.3s ease;
@@ -905,7 +909,8 @@
     }
 
     .skill-card-wrapper:hover .skill-card-label {
-      color: var(--accent); /* Changes color on wrapper hover */
+      color: var(--accent);
+      /* Changes color on wrapper hover */
       transform: translateY(1px);
     }
 
